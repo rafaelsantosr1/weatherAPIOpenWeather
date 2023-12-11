@@ -3,23 +3,29 @@ body{
     font-family: 'Montserrat', normal;
 }
 
+h1 {
+    text-align: center;
+}
+
 
 .weather {
     width: 900px;
     border: 5px #9deced;
     padding: 20px;
     margin: 10px;
-    background-image: url("https://e0.pxfuel.com/wallpapers/192/283/desktop-wallpaper-grand-theft-auto-v-sunset-artwork-resolution-background-and-gta-v.jpg ");
+    background-image: url("https://c0.wallpaperflare.com/path/276/709/285/brazil-botucatu-clouds-nuvens-3931ce689c4c08f4c7390988e71e0c58.jpg");
     background-size: cover;
     background-position: center center;
     text-align: center;
-    color: #ebffff;
+    color: black;
 
 
 
 }
 
-
+#timer {
+    font-size: 90px;
+}
 
 .city {
     font-size: 90px;
