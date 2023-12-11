@@ -5,6 +5,8 @@ function renderWeather(weather){
     var humidityContainer = document.querySelector(".humidity");
     var cloudContainer = document.querySelector(".cloud");
     var windContainer = document.querySelector(".wind");
+
+    
     // create h2 for name
     var city = document.createElement("p");
     city.textContent = weather.name;
@@ -16,7 +18,7 @@ function renderWeather(weather){
     tempContainer.append(temp);
 
     var humidity = document.createElement("p");
-    humidity.textContent = "Humidade: " + weather.main.humidity + " %";
+    humidity.textContent = "Umidade: " + weather.main.humidity + " %";
     humidityContainer.append(humidity);
 
     var cloud = document.createElement("p");
@@ -40,3 +42,13 @@ function fetchWeather(query) {
 }
 
 fetchWeather();
+
+function time()
+{
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+document.getElementById('timer').innerHTML=h+":"+m+":"+s;
+setTimeout('time()',500);
+}
