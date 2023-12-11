@@ -4,35 +4,45 @@ body{
 }
 
 
+.weather {
+    width: 900px;
+    border: 5px #9deced;
+    padding: 20px;
+    margin: 10px;
+    background-image: url("https://e0.pxfuel.com/wallpapers/192/283/desktop-wallpaper-grand-theft-auto-v-sunset-artwork-resolution-background-and-gta-v.jpg ");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: #ebffff;
 
-#city{
-    font-size: 80px;
+
+
 }
 
-#temp {
-    font-size: 40px;
-    background-color:rgb(55, 165, 199);
+
+
+.city {
+    font-size: 90px;
 }
 
-#humidity {
-    font-size: 24px;
+.temp {
+    font-size: 60px;
 }
 
-#cloud {
-    font-size: 16px;
+.box1 {
+    text-align: center;
+    display:inline-flex;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 
-#wind {
-    font-size: 12px;
-}
-
-.container-fluid{
+.box1 .humidity {
+    padding-right: 100px;
     
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 100%;
-    font-weight: 110;
 }
 
+.box1 .cloud {
+    padding-left: 100px;
+}
