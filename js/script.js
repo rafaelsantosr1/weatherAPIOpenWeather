@@ -5,6 +5,7 @@ function renderWeather(weather){
     var humidityContainer = document.querySelector(".humidity");
     var cloudContainer = document.querySelector(".cloud");
     var windContainer = document.querySelector(".wind");
+    var feelslikeContainer = document.querySelector(".feelslike");
 
     
     // create h2 for name
@@ -14,7 +15,7 @@ function renderWeather(weather){
 
     //creat p for humidity, wind, description, temp
     var temp = document.createElement("p");
-    temp.textContent = "Temperatura: " + parseInt(weather.main.temp) + " C°";
+    temp.textContent = parseInt(weather.main.temp) + " C°";
     tempContainer.append(temp);
 
     var humidity = document.createElement("p");
@@ -28,6 +29,10 @@ function renderWeather(weather){
     var wind = document.createElement("p");
     wind.textContent = "Velocidade do vento: " + weather.wind.speed + " mph, " + weather.wind.deg + "°";
     windContainer.append(wind);
+
+    var feelslike = document.createElement("p");
+    wind.textContent = "Sensação térmica: " + parseInt(weather.main.feels_like) + " C°";
+    feelslikeContainer.append(feelslike);
 
     details.append("")
 }
