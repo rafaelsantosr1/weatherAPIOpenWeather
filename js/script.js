@@ -1,12 +1,12 @@
 function renderWeather(weather){
 
-    var cityContainer = document.querySelector("#city");
-    var tempContainer = document.querySelector("#temp");
-    var humidityContainer = document.querySelector("#humidity");
-    var cloudContainer = document.querySelector("#cloud");
-    var windContainer = document.querySelector("#wind");
+    var cityContainer = document.querySelector(".city");
+    var tempContainer = document.querySelector(".temp");
+    var humidityContainer = document.querySelector(".humidity");
+    var cloudContainer = document.querySelector(".cloud");
+    var windContainer = document.querySelector(".wind");
     // create h2 for name
-    var city = document.createElement("h2");
+    var city = document.createElement("p");
     city.textContent = weather.name;
     cityContainer.append(city);
 
