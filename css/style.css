@@ -25,27 +25,6 @@ h1 {
     font-size: 90px;
 }
 
-
-
-.box1 {
-    text-align: center;
-    display:inline-flex;
-    font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-
-}
-
-.box1 .humidity {
-    padding-right: 100px;
-    
-}
-
-.box1 .cloud {
-    padding-left: 100px;
-}
-
-
 .box {
     text-align: center;
     display:inline-flex;
@@ -67,3 +46,30 @@ h1 {
     padding-left: 100px;
 
 }
+
+
+.feelslike {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.box1 {
+    text-align: center;
+    display:inline-flex;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.box1 .humidity {
+    padding-right: 100px;
+    
+}
+
+.box1 .cloud {
+    padding-left: 100px;
+}
+
+
