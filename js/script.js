@@ -6,7 +6,7 @@ function renderWeather(weather){
     var cloudContainer = document.querySelector(".cloud");
     var windContainer = document.querySelector(".wind");
     var feelslikeContainer = document.querySelector(".feelslike");
-    var iconContainer = document.querySelector(".icon");
+    var cloudIconElement = document.querySelector("#cloud-icon");
 
     
     // create h2 for name
@@ -32,6 +32,7 @@ function renderWeather(weather){
         'http://openwearthermap.org/img/wn/${weather.weather[0].icon}.png'
     );
 
+    
 
 
     var wind = document.createElement("p");
