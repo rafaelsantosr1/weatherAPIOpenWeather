@@ -57,12 +57,24 @@ function fetchWeather(query) {
 
 fetchWeather();
 
+
+//Add zero in time < 10
+function addZero(i) {
+    if (i < 10) {i = "0" + i}
+    return i;
+  }
+
 function time()
 {
 today=new Date();
-h=today.getHours();
-m=today.getMinutes();
-s=today.getSeconds();
+h=addZero(today.getHours());
+m=addZero(today.getMinutes());
+s=addZero(today.getSeconds());
 document.getElementById('timer').innerHTML=h+":"+m+":"+s;
 setTimeout('time()',500);
 }
+
+// Refresh the page after a delay of 10 minutes
+setTimeout(function(){
+    location.reload();
+}, 600000); // 600000 milliseconds = 10 minutes
