@@ -4,7 +4,7 @@ Mostra a hora atual da cidade de Petrolina PE e o clima consumindo a API do Open
 
 #
 * Doc API:
-  * (https://openweathermap.org/api/one-call-3) 
+  * [API-OPENWEATHER](https://openweathermap.org/api/one-call-3) 
 #
 
 
