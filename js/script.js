@@ -4,9 +4,9 @@ function renderWeather(weather){
     var tempContainer = document.querySelector(".temp");
     var humidityContainer = document.querySelector(".humidity");
     var cloudContainer = document.querySelector(".cloud");
-    var windContainer = document.querySelector(".wind");
-    var feelslikeContainer = document.querySelector(".feelslike");
     var cloudIconElement = document.querySelector("#cloud-icon");
+
+    //var windContainer = document.querySelector(".wind");
 
     
     // create h2 for name
@@ -28,20 +28,14 @@ function renderWeather(weather){
     cloud.textContent = "Nuvens: " + weather.weather[0].description;
     cloudContainer.append(cloud);
     cloudIconElement.setAttribute(
-        "src",
-        'http://openwearthermap.org/img/wn/${weather.weather[0].icon}.png'
-    );
-
+        "src" ,`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`
+        );
     
-
-
+/*
     var wind = document.createElement("p");
     wind.textContent = "Velocidade do vento: " + weather.wind.speed + " mph, " + weather.wind.deg + "°";
     windContainer.append(wind);
-
-    var feelslike = document.createElement("p");
-    feels.textContent = "Sensação térmica: " + weather.main.feels_like + " C°";
-    feelslikeContainer.append(feelslike);
+*/
 
     details.append("")
 }
